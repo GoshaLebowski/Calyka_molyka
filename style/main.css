@@ -1,0 +1,142 @@
+/* input type="number" */
+input[type="number"][disabled] {
+    color: #000000;
+}
+
+/* для Chrome */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* для Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+/* для других */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Подключение шрифтов */
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Lora-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("../fonts/Lora-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Relief";
+    src: url("../fonts/Comic\ Relief.ttf");
+    font-weight: 400;
+}
+
+/* --------------------------------------------------------- */
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url(../img/1640341842_1-abrakadabra-fun-p-fon-igrushki-dlya-detei-1.jpg);
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: Relief;
+}
+main {
+    width: max-content;
+    padding: 1.5em;
+    border-radius: 0.6em;
+    background: linear-gradient(145deg, #f0ccb7, #b38e78);
+    box-shadow:  6px 6px 6px #b4998a,
+    -4px -4px 6px #e0b298;
+}
+
+.calc {
+    font-family: Relief;
+    margin-left: 90px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background: linear-gradient(180deg, #f0ccb7, #b38e78);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px;
+    cursor: pointer;
+    width: 85px;
+}
+.save {
+    font-family: Relief;
+    background: linear-gradient(180deg, #f0ccb7, #b38e78);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px;
+    cursor: pointer;
+    width: 85px;
+}
+.warn-text {
+    color: #fff;
+    font-size: 20px;
+    display: none;
+}
+
+.ml-lm {
+    margin-left: 60px;
+}
+
+.ml-mb-sm {
+    margin-left: 30.3px;
+    margin-bottom: 12px;
+    width: 149px;
+}
+
+.ml-mb-c {
+    margin-left: 14.3px;
+    margin-bottom: 12px;
+}
+
+.ml-mb-n {
+    margin-left: 44.5px;
+    margin-bottom: 12px;
+}
+
+.ml-mb-nod {
+    margin-left: 11.3px;
+    margin-bottom: 12px;
+}
+
+.ml-a {
+    margin-left: 13px;
+    width: 149px;
+}
+
+.ml-s {
+    margin-left: 22px;
+}
+
+.header {
+    text-align: center;
+    text-decoration: underline;
+}
